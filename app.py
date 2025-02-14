@@ -15,6 +15,7 @@ def get_huggingface_token():
     if token is None :
         token = st.secrets.get('HUGGINGFACE_API_TOKEN')
 
+    print(token)
     return token
 
 @st.cache_resource
